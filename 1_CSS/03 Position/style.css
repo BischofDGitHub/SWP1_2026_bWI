@@ -1,0 +1,25 @@
+div{
+    border-style: solid;
+    height: 100px;
+}
+
+.div1{
+    background-color: red;
+    position: relative;
+    top: -25px;
+    left: 15px;
+}
+
+.div2{
+    background-color: brown;
+    width: 100px;
+    position: absolute;
+    bottom: -100px;
+}
+
+.div3{
+    background-color: aqua;
+    width: 100px;
+    position: fixed;
+    top:20px;
+}
