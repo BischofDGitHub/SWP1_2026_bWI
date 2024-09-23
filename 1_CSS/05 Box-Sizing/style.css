@@ -1,0 +1,15 @@
+*{
+    box-sizing: content-box;    /* border-box: padding bewegt element in der box anstatt außerhalb (box bleibt gleich groß bei verwendung von pading) */
+    /* content box --> bessere Kontrolle (Standart) */
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-style: solid;
+}
+
+.second{
+    padding: 10px;
+}
