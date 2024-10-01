@@ -1,0 +1,15 @@
+.box{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+
+.container{
+    background-color: green;
+    height: 400px;
+    display: flex; /* Elemente in diesem Element werden seitlich dargestellt */
+    flex-direction: row; /* bestimmt, wie die Objekte ausgerichtet werden */
+    justify-content: space-between; /* justify-content richtet die Objekte auf der Hauptachse (Waagerecht) aus */
+    align-items: center; /* align-items richtet die Objekte Senkrecht aus */
+}
