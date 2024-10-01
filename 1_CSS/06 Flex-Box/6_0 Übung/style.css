@@ -1,0 +1,61 @@
+li{
+    list-style-type: disc;
+}
+
+
+.container{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 100px;
+}
+
+.box{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: greenyellow;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+.infobox{
+   border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: blue;
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    height: 300px; 
+    position: relative;
+}
+
+.bild{
+    height: 100px;
+    width: 100px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: brown;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.pink{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: pink;
+}
