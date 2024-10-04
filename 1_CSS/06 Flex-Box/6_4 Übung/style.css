@@ -1,0 +1,45 @@
+.bar{
+    border-bottom: 2px black solid;
+    height: 200px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.multibox{
+    width: auto;
+    height: auto;
+    border: solid 5px black;
+    padding: 5px;
+    display: flex;
+}
+
+.box{
+    height: 20px;
+    width: 20px;
+    border: solid black 2px;
+    margin: 1px;
+}
+
+.greenbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-color: yellowgreen;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.purplebox{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    border: solid black 2px;
+    background-color: purple;
+}
