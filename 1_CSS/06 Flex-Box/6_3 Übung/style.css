@@ -1,0 +1,38 @@
+.mainbox{
+    border: black solid 1px;
+    margin: 100px;
+    width: 400px;
+}
+
+.flex{
+    display: flex;
+}
+
+.greenbox{
+    border: black solid 1px;
+    background-color: green;
+    height: 300px;
+    width: 199px;
+}
+
+.bluebox{
+    border: black solid 1px;
+    background-color: aqua;
+    height: 300px;
+    width: 199px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.blackbox{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+
+.orangebox{
+    border: black solid 1px;
+    background-color: orange;
+    height: 100px;
+    width: 398px;
+}
