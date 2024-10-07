@@ -1,0 +1,35 @@
+.mainbox{
+    display: flex;
+    width: auto;
+    height: auto;
+    border: solid 2px black;
+    margin: 100px;
+}
+
+.left{
+    justify-content: space-evenly;
+    display: grid;
+    padding: 50px;
+    width: 50%;
+    grid-auto-rows: minmax(100px, 25%);
+    grid-template-columns: 25% 25% 25%;
+    row-gap: 5%;
+    column-gap: 5%;
+    border-right: 2px solid black;
+}
+
+.right{
+    justify-content: space-evenly;
+    display: grid;
+    padding: 50px;
+    width: 50%;
+    grid-auto-rows: minmax(200px, 25%);
+    grid-template-columns: 40% 40%;
+    row-gap: 5%;
+    column-gap: 5%;
+}
+
+.box{
+    background-color: greenyellow;
+    border: solid 2px black;
+}
