@@ -1,0 +1,60 @@
+.mainbar{
+    display: grid;
+    border: solid 2px black;
+    grid-template-columns: 50px 50px 50px;
+    grid-auto-rows: minmax(50px, 50px);
+    justify-content: space-between;
+    padding: 25px;
+    margin: 50px;
+}
+
+.bigbox{
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+}
+
+.rightbox{
+    width: 40%;
+    height: 200px;
+    border: solid 2px black;
+}
+
+.leftbox{
+    width: 55%;
+    height: 200px;
+    border: solid 2px black;
+}
+
+.box{
+    border: solid 2px black;
+}
+
+.item1{
+    background-color: yellow;
+}
+
+.item2{
+    background-color: orange;
+}
+
+.item3{
+    background-color: red;
+}
+
+@media (max-width: 800px){
+    .mainbar{
+        border: 0px;
+        row-gap: 25px;
+        grid-template-columns: 50px;
+        padding: 0px;
+    }
+
+    .bigbox{
+        display: inline;
+    }
+
+    .rightbox{
+        margin-top: 25px;
+    }
+}
