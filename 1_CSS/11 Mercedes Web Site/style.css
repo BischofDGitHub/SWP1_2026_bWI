@@ -1,0 +1,142 @@
+h1{
+    font-size: 60px;
+    padding-bottom: 4vh;
+}
+
+.options{
+    flex: 1;
+    padding-left: 5%;
+}
+
+.options ul li{
+    display: inline-block;
+    padding-right: 3rem;
+}
+
+.menubar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3vh;
+    padding: 2rem;
+    background-color: black;
+    color: darkgray;
+}
+
+.reprimands{
+    flex: 1;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.reprimands ul{
+    float: right;
+    list-style: none;
+}
+
+.reprimands ul li{
+    display: inline-block;
+    padding-left: 3rem;
+}
+
+.login{
+    display: flex;
+}
+
+.login:hover, .logo:hover, .contact:hover, .infobutton:hover, .offerbutton:hover, .mercedes:hover{
+    cursor: pointer;
+}
+
+.mercedes{
+    margin: 0 auto;
+    width: 2.5rem;
+}
+
+.logo{
+    width: 24px;
+}
+
+.logintext{
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.cars{
+    height: auto;
+    width: 99vw;
+    position: relative;
+}
+
+.overlayvertical{
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.66) 16%, rgba(255,255,255,0.33) 33%, rgba(255,255,255,0) 50%);
+    height: 90vh;
+    width: 99vw;
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+}
+
+.overlayhorizontal{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.66) 16%, rgba(255,255,255,0.33) 33%, rgba(255,255,255,0) 50%);
+    height: 90vh;
+    width: 99vw;
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+}
+
+.infobox{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 40vh 7.5vw;
+}
+
+.buttons{
+    display: flex;
+    padding-top: 100px;
+}
+
+.infobutton{
+    font-weight : bold;
+    border: black solid 0.5px;
+    background-color: white;
+    padding: 15px;
+    margin-right: 5px;
+}
+
+.infobutton:hover{
+    background-color: rgb(167, 163, 163);
+}
+
+.offerbutton{
+    background-color: rgb(49, 107, 215);
+    border: rgb(49, 107, 215) solid 0.5px;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+}
+
+.offerbutton:hover{
+    background-color: blue;
+}
+
+.contact{
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 3;
+    bottom: 0px;
+    right: 0px;
+    margin: 20px;
+    border: solid black 2px;
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo2{
+    flex: 0;
+}
