@@ -26,6 +26,8 @@ for (let index = 0; index < 16; index++) {
 
 let value1 = 1;
 let value2 = 100;
+let sum = 0;
+console.log("");
 
 for (count = value1; count <= value2; count++){
     if (count % 2 == 0)
