@@ -1,6 +1,6 @@
 //Gib Werte zwichen -100 und 100 ein
 let value1 = 23124;
-let value2 = -1000;
+let value2 = 0;
 let sum = 0;
 
 /*do {
