@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Rechner</title>
+    <link rel="stylesheet" href="cssreset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="calc">
+        <h1 id="heading">Rechner</h1>
+        <div class="inputs">
+            <input type="text" id="number1" placeholder="Gib eine Zahl ein" />  <!--bei input kann als type-->
+            <div id="operation"></div>
+            <input type="text" id="number2" placeholder="Gib eine Zahl ein"/>
+        </div>
+        <div id="output"></div>
+        <div class="buttons">
+            <button onclick="additionClicked()">Add</button>
+            <button onclick="subtractionClicked()">Subtract</button>
+            <button onclick="multiplicationClicked()">Multiply</button>
+            <button onclick="divisionClicked()">Divide</button>
+        </div>
+    </div>
+    
+
+
+    
+</body>
+</html>
