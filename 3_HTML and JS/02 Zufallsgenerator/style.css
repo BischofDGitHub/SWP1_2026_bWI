@@ -1,0 +1,54 @@
+.inputs{
+    display: flex;
+}
+
+input{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.button{
+    margin: 10px;
+}
+
+button{
+    width: 100%;
+}
+
+h1{
+    justify-self: center;
+}
+
+#output{
+    justify-self: center;
+}
+
+#image{
+    justify-self: center;
+    width: 50%;
+}
+
+#image:hover{
+    transition: 0.5s;
+    rotate: 3600deg;
+    width: 90%;
+}
+
+#bodySecret{
+    min-height: 100vh;
+    color: #333;
+    background: #ddd;
+    background-image: linear-gradient(90deg, rgba(224, 15, 15, 1) 0%, rgba(255, 169, 48, 1) 50%, rgba(255, 251, 9, 1) 100%, rgba(255, 169, 48, 1) 75%,rgba(224, 15, 15, 1) 100%);
+    animation: bg-animation 0.5s infinite alternate;
+    background-size: 400%;
+}
+
+@keyframes bg-animation{
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
