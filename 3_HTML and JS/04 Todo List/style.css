@@ -1,0 +1,6 @@
+.tasks .task{
+    padding: 20px;
+    border: solid 2px black;
+    width: 300px;
+    margin-bottom: 5px;
+}
