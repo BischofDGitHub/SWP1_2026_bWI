@@ -1,0 +1,139 @@
+*{
+    --gradient: linear-gradient(45deg, 
+    red, 
+    orange, 
+    yellow,
+    chartreuse, 
+    green, 
+    cyan, 
+    blue, 
+    magenta, 
+    red,
+    orange,
+    yellow);
+    
+    font-family: 'Aptos', sans-serif; /* Schriftart für den gesamten Körper */
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+h1{
+    color: transparent;
+    font-size: 30px;
+    background-image: var(--gradient);
+    background-clip: text;
+    background-size: 570%;
+    animation: bg-animation 15s infinite;
+    -webkit-text-stroke: 0.5px black;
+}
+
+@keyframes bg-animation{
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+
+
+
+.wrapper *{
+    justify-self: center;
+}
+
+.wrapper{
+    border: solid black 2px;
+    border-radius: 10px;
+    background-color:rgba(128, 128, 128, 0.132);
+    width: fit-content;
+    justify-self: center;
+    padding: 10px;
+    margin-top: 5%;
+    box-shadow: 0px 0px 10px grey;
+}
+
+#info{
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 20px 50px;
+    padding-bottom: 10px;
+}
+
+.criteria{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+#length{
+    margin-top: 1.2rem;
+}
+
+#generate{
+    border: solid 1px black;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 200px;
+    background-color: rgba(128, 128, 128, 0.132);
+}
+
+#generate:hover{
+    cursor: pointer;
+    background-color: darkgray;
+    font-size: 1.05rem;
+}
+
+.output{
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    border: 2px black solid;
+    display: flex;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+#output{
+    height: 100%;
+    resize: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    border: 0;
+    margin: 0px 5px;
+    background-color: transparent;
+}
+
+#output::selection{
+    background-color: transparent;
+    outline: none;
+}
+
+#output:focus, #copy:focus {
+    outline: none; /* Entfernt den standardmäßigen Umriss */
+    border: none; /* Entfernt den Rahmen */
+}
+
+
+#copy{
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: white;
+    align-self: center;
+    background-image: url(copyToClipboard.svg);
+    background-size: 100%;
+    margin: 0px 5px;
+    border: 0;
+    background-color: transparent;
+}

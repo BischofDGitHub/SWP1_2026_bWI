@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="icon" href="lock.png">
+    <link rel="stylesheet" href="cssreset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Password Generator</h1>
+        <div id="info">Generate your very own password!</div>
+        <ul class="checkbox">
+            <li class="point"><input type="checkbox" class="criteria" id="capital">Uppercase letters</li>
+            <li class="point"><input type="checkbox" class="criteria" id="lowercase">Lowercase letters</li>
+            <li class="point"><input type="checkbox" class="criteria" id="numbers">Numbers</li>
+            <li class="point"><input type="checkbox" class="criteria" id="special">Special characters</li>
+            <li class="input"><input type="number" id="length" placeholder="Enter Length"></li>
+        </ul>   
+        <div>
+            <button id="generate" onclick="printPassword()">Generate password</button>
+        </div>     
+        <div class="output">
+            <div>
+                <textarea cols="20" rows="2" id="output" readonly></textarea>
+            </div>
+            <button id="copy" onclick="copyToClipboard()"></button>
+        </div>
+    </div>
+</body>
+</html>
