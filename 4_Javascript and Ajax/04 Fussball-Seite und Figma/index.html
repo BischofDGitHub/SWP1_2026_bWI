@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="cssreset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">Bundesliga 2022</div>
+    <nav class="navi">
+        <div id="title">Teams</div>
+        <div id="sort">
+            <div id="sorttxt">sort by</div>
+            <div id="sortimg"></div>
+        </div>
+    </nav>
+    <table class="wrapper">
+        <thead class="head">
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Games</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>Goals</th>
+              <th>Diff</th>
+              <th>PTS</th>
+              <th id="expand"></th>
+            </tr>
+        </thead>
+        <tbody id="output">
+        </tbody>
+        <!--
+        <div id="legend"> 
+            <ul class="list infobar">
+                <li>#</li> 
+                <li>Name</li>
+                <li>Games</li>
+                <li>W</li>
+                <li>D</li>
+                <li>L</li>
+                <li>Goals</li>
+                <li>Diff</li>
+                <li>PTS</li>
+                <li id="expand"></li>
+            </ul>
+            <ul id="output"></ul>          
+        </div>
+        -->
+        <div id="table"></div>
+    </table>
+</body>
+</html>
