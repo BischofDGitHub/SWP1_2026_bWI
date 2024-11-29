@@ -16,6 +16,11 @@ function inputClear(event) {
     */
 }   
 
+function clearNumbers() {
+    document.getElementById("number1").value = "";
+    //document.getElementById("number2").value = "";
+}
+
 function additionClicked() {
     let num1 = parseFloat(document.getElementById("number1").value);
     let num2 = parseFloat(document.getElementById("number2").value);
@@ -26,8 +31,7 @@ function additionClicked() {
     else {
         let result = num1 + num2;
         document.getElementById("output").innerText = "Das Ergebnis von " + num1 + " + " + num2 + " ist " + result;
-        document.getElementById("number1").value = "";
-        document.getElementById("number2").value = "";
+        clearNumbers();
     }
 
     document.getElementById("operation").innerText = "+";
@@ -44,8 +48,7 @@ function subtractionClicked() {
     else {
         let result = num1 - num2;
         document.getElementById("output").innerText = "Das Ergebnis von " + num1 + " - " + num2 + " ist " + result;
-        document.getElementById("number1").value = "";
-        document.getElementById("number2").value = "";
+        clearNumbers();
     }
 
     document.getElementById("operation").innerText = "-";
@@ -62,8 +65,7 @@ function multiplicationClicked() {
     else {
         let result = num1 * num2;
         document.getElementById("output").innerText = "Das Ergebnis von " + num1 + " * " + num2 + " ist " + result;
-        document.getElementById("number1").value = "";
-        document.getElementById("number2").value = "";
+        clearNumbers();
     }
 
     document.getElementById("operation").innerText = "*";
@@ -83,8 +85,7 @@ function divisionClicked() {
     else {
         let result = num1 / num2;
         document.getElementById("output").innerText = "Das Ergebnis von " + num1 + " / " + num2 + " ist " + result;
-        document.getElementById("number1").value = "";
-        document.getElementById("number2").value = "";
+        clearNumbers();
     }
 
     document.getElementById("operation").innerText = "/";
