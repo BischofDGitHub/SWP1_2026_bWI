@@ -1,6 +1,7 @@
 h1{
-    font-size: 60px;
+    font-size: 50px;
     padding-bottom: 4vh;
+    font-family: "Bodoni MT", "Didot", "Times New Roman", serif;
 }
 
 .options{
@@ -10,7 +11,7 @@ h1{
 
 .options ul li{
     display: inline-block;
-    padding-right: 3rem;
+    padding-right: 2.5rem;
 }
 
 .menubar{
@@ -41,6 +42,8 @@ h1{
 
 .login{
     display: flex;
+    height: fit-content;
+    align-items: center;
 }
 
 .login:hover, .logo:hover, .contact:hover, .infobutton:hover, .offerbutton:hover, .mercedes:hover{
@@ -54,6 +57,10 @@ h1{
 
 .logo{
     width: 24px;
+}
+
+.loginlogo{
+    width: 36px;
 }
 
 .logintext{
@@ -137,6 +144,40 @@ h1{
     align-items: center;
 }
 
-.logo2{
-    flex: 0;
+.chat{
+    width: 40px;
+}
+
+.legal{
+    padding: 2.5% 7%;
+    font-size: 14px;
+    line-height: 120%;
+    color: gray;
+}
+
+.img{
+    height: 11px;
+}
+
+
+.daughter{
+    margin-top: 2%;
+    border: solid 1px lightgray;
+    width: fit-content;
+    justify-self: center;
+    list-style: none;
+    display: flex;
+}
+
+.daughter li{
+    padding: 20px 30px;
+    border: solid 1px lightgray; 
+}
+
+.daughter .blackbackground{
+    background-color: black;
+}
+
+.recommendation{
+    padding: 2.5% 7%;
 }
