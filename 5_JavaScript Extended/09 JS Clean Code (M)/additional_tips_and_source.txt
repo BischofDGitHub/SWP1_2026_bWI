@@ -1,0 +1,52 @@
+Quelle: https://javascript.plainenglish.io/javascript-clean-code-best-practices-461c24c53cae
+
+
+
+6. Avoid Using Eval
+The Eval function allows us to pass a string to the JavaScript compiler and have it execute as JavaScript
+
+In simple terms, anything you pass in at runtime gets executed as if it were added at design time.
+
+eval("alert('Hi');");
+This would pop up an alert box with the message “Hi” in it.
+
+Eval function should be avoided because it’s not safe and it opens a potential threat vector for malicious programmers to exploit.
+
+
+
+7. Use JSLint
+JSLint is a great tool for helping you identify common problems in your JavaScript code, it will pick up bad code that is being masked by the browser.
+
+You can use a different sites like JavaScriptLint.com, or you can use one of the many downloadable JSLint tools.
+
+For instance, Visual Studio has an add-in for JSLint that will allow you to check for errors at compile-time (or manually).
+
+This will make your code cleaner and it will help to prevent those pesky bugs from showing up in production.
+
+
+
+8. Avoid In General
+In general, you should do your best not to repeat yourself, meaning you shouldn’t write duplicate code, and not to leave tails behind you such as unused functions and dead code.
+
+Removing duplicate code in this situation means to abstract the differences and handle them on that level.
+
+And about the dead code, well it is what its name says.
+
+It's the code sitting there in our code base not doing anything because, at some point in development, you’ve decided that it no longer has a purpose.
+
+You should search your codebase for these parts and delete all unneeded functions and code blocks.
+
+An advice I can give to you is as soon you decide it’s no longer needed, delete it.
+
+
+
+Conclusion
+This is only a fraction of what you could do to improve your code.
+
+In my opinion, the principles alleged here are the ones which people often don’t follow.
+
+They try to, but it’s not easy to maintain the mental strength and make a great code all the time.
+
+Maybe at the start of the project, the code is neat and clean but when it comes to meeting deadlines, the principles are often ignored and moved into a “TODO” or “REFACTOR” section.
+
+Thank you for reading and see you in the next article!
