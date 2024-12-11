@@ -1,8 +1,8 @@
-export default function Person({name, desciption}) {
+export default function Person({name, description, winkel}) {
     return (
         <div className="person">
             <h1>{name}</h1>
-            <p>{desciption}</p>
+            <p>{description}</p>
         </div>
     );
 }
