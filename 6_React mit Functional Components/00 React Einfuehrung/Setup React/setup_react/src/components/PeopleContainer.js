@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Card2 from './Card2'
+import { Link } from 'react-router-dom';
 
 export default function PeopleContainer() {
 
@@ -23,11 +24,12 @@ export default function PeopleContainer() {
 
   return (
     <div className='p-8' >
-      <div className='fixed border mb-4 bg-white w-full h-28 p-8'>
+      <div className='fixed border mb-4 bg-white w-full h-28 p-8 flex'>
         <input type="text" className='border p-4' placeholder='Search'  onChange={(element) => {
           console.log(element.target.value);
           filterPeople(element.target.value);
-        }}/>
+        }} />
+      <Link to="/secret" className='border rounded-lg fixed right-16 p-2 pl-4 pr-4'>Secret</Link>
       </div>
       <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 p-8 pt-32'>
         {filteredPeople.map((person, index) => {
