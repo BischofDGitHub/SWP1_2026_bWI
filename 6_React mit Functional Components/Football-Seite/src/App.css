@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+*{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  --margin-1: 2.7%;
+  --margin-2: 3.7%;
+}
+
+.header{
+  margin: 25px;
+  padding: 45px;
+  border: black solid 2px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right,white 0%, rgba(255, 255, 255, 0.5) 66.66%, transparent), url("../public/football.png");
+  background-position: center;
+  background-size: cover;
+  font-size: 50px;
+  font-weight: 200;
+}
+
+.navi{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 25px;
+  padding: 0;
+}
+
+#title{
+  font-size: 35px;
+  font-weight: 350;
+  margin: 0px 45px;
+}
+
+#sort{
+  border: solid 2px black;
+  border-radius: 25px;
+  font-size: 15px;
+  padding: 10px;
+  margin: 0px 45px; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#sort:hover{
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+#sorttxt{
+  padding-right: 10px;
+}
+
+#sortimg{
+  margin-left: 10px;
+  height: 25px;
+  width: 25px;
+  background-image: url("images/sort.svg");
+  background-size: cover;
+}
+
+.wrapper{
+  /*border: black 2px solid;*/
+  border-collapse: separate;
+  border-spacing: 20px 5px; /* Horizontal: 10px, Vertikal: 15px */
+  width: 96.5%;
+  border-radius: 25px;
+  background-color: #1C2632;
+  color: #83888F;
+  margin: 25px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.head{
+  font-size: 20px;
+}
+
+.team{
+  color: rgba(255, 255, 255, 0.655);
+  font-size: 15px;
+  padding: 100px 10px;
+}
+
+
+/*#output tr li:nth-child(2), .list li:nth-child(4), .list li:nth-child(5), .list li:nth-child(6){
+  padding-left: var(--margin-1);
+}
+
+#output tr li:nth-child(7), .list li:nth-child(8), .list li:nth-child(9){
+  padding-left: var(--margin-2);
+}
+
+#output tr li:nth-child(3){
+  padding-left: 44.8%;
+}*/
+
+#expand{
+  color:#83888F;
+  background-image: url("images/expand.svg");
+  background-position: center;
+  background-size: cover;
+  width: 20px;
+  margin-left: 8%;
+}
+
+#expand:hover{
+  cursor: pointer;
+}
+

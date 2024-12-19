@@ -37,7 +37,7 @@ export default function PeopleContainer() {
         })}
       <Card2 name="Quandale Dingle" title="Ohio Gyatt Rizzler" imageUrl='https://e0.pxfuel.com/wallpapers/177/911/desktop-wallpaper-quandale-dingle-jaw-active-tank.jpg' />
       </div>
-    </div>
+    </div>  
       
   )
 }

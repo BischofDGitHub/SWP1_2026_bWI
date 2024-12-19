@@ -1,3 +1,5 @@
 figma: https://www.figma.com/login
 mockapi: https://mockapi.io/projects/675b12f39ce247eb19358f09
 react router: https://reactrouter.com/tutorials/address-book, https://reactrouter.com/start/framework/installation, https://reactrouter.com/6.28.0/start/tutorial
+vite: https://vite.dev/guide/, https://www.youtube.com/watch?v=O1ZGZ8beEFc
+tailwind (vite): https://tailwindcss.com/docs/guides/vite, https://www.youtube.com/watch?v=judAlUeXdzc

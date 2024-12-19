@@ -1,17 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import localImage from './images/image.png';
-import Person from './components/Person';
-import Card from './components/Card';
-import List from './components/List';
-import Button from './components/Button';
-import PeopleContainer from './components/PeopleContainer';
 import {
   createBrowserRouter,
   Link,
-  RouterProvider,
-  useNavigate,
+  RouterProvider
 } from "react-router-dom";
+import './App.css';
+import Button from './components/Button';
+import Card from './components/Card';
+import List from './components/List';
+import PeopleContainer from './components/PeopleContainer';
+import localImage from './images/image.png';
 
 // const navigate = useNavigate();
 
