@@ -1,5 +1,9 @@
 figma: https://www.figma.com/login
 mockapi: https://mockapi.io/projects/675b12f39ce247eb19358f09
-react router: https://reactrouter.com/tutorials/address-book, https://reactrouter.com/start/framework/installation, https://reactrouter.com/6.28.0/start/tutorial
+react router: https://reactrouter.com/tutorials/address-book, https://reactrouter.com/start/framework/installation, https://reactrouter.com/6.28.0/start/tutorial, npm install react-router-dom
 vite: https://vite.dev/guide/, https://www.youtube.com/watch?v=O1ZGZ8beEFc
 tailwind (vite): https://tailwindcss.com/docs/guides/vite, https://www.youtube.com/watch?v=judAlUeXdzc
+httpie (postman clone🤡):
+mockapi:
+cursorio (something ai Maybe):
+supabase: https://supabase.com/

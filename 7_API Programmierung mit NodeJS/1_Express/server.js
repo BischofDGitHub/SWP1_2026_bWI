@@ -23,6 +23,7 @@ app.get('/people', (req, res) => {
 app.get('/people/:id', (req, res) => {
     let id = req.params.id;
     res.send(data[id]);
+    
 })
 
 

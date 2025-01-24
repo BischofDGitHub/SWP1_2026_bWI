@@ -8,10 +8,9 @@ export default function PeopleContainer() {
   const [filteredPeople, setFilteredPeople] = useState([]);
 
   useEffect(() => {
-    fetch("https://675b12f39ce247eb19358f08.mockapi.io/papi/person").then((result) => {
+    fetch("https://cors-anywhere.herokuapp.com/https://animeapi.skin/search?q=dragon%20ball&page=1").then((result) => {
       result.json().then((data) => {
-        setPeople(data);
-        setFilteredPeople(data);
+        console.log(data);
       });
     })
   }, []);
