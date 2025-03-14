@@ -10,7 +10,7 @@ export default function person({ }: Props) {
   const [people, setPeople] = useState<Array<Person>>([]);
 
   useEffect(() => {
-    fetch('http://192.168.40.1:5000/people').then((res) => {
+    fetch('http://10.110.48.226:5000/users').then((res) => {
       res.json().then((data) => {
         setPeople(data);
         console.log(data); 
