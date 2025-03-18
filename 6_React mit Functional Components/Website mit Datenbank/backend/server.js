@@ -21,14 +21,6 @@ mongoose
   .then(() => console.log("Database connected"))
   .catch((err) => console.error("Database couldn't connect:", err));
 
-const UserSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  age: { type: Number, required: true },
-  //age: Number,
-});
-
-const User = mongoose.model("User", UserSchema);
-
 app.post("/users", async (req, res) => {
   try {
     const newUser = new User(req.body); // Neuen Benutzer aus dem Request-Body erstellen

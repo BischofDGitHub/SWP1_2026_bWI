@@ -32,3 +32,18 @@ mal enter
 ![Raphael](Drooling%20Emoticon_%20Sticker%20for%20Sale%20by%20Yael%20Weiss%20_%20Redbubble.jpg)
 ![test](https://th.bing.com/th/id/OIP.12-bMyvM8MX84yhb0MTckAHaHt?rs=1&pid=ImgDetMain)  
 [SuperGeheimeWebsite](https://www.youtube.com/watch?v=xvFZjo5PgG0)
+
+# Seriöser Teil
+
+## backend
+
+Befehle zum Aufsetzen des backends
+
+```bash
+mkdir backend && cd backend
+npm init -y
+```
+
+```bash
+npm install express mongoose cors dotenv
+```
