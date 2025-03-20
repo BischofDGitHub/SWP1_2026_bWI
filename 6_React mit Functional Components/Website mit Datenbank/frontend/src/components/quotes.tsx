@@ -1,30 +1,29 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import Quote from "./Quote";
 
 type Props = {};
-type Quote ={
-  name: string,
-  age: number
-}
+type Quote = {
+  content: string;
+  submitter: string;
+};
 
-export default function quotes({ }: Props) {
-  const [people, setPeople] = useState<Array<Quote>>([]);
+export default function quotes({}: Props) {
+  const [quotes, setQuotes] = useState<Array<Quote>>([]);
 
   useEffect(() => {
-    fetch('http://10.110.48.226:5000/users').then((res) => {
+    fetch("http://10.0.0.192:5000/quotes").then((res) => {
       res.json().then((data) => {
-        setPeople(data);
-        console.log(data); 
-      })
+        setQuotes(data);
+        console.log(data);
+      });
     });
-  },[]);
+  }, []);
 
   return (
     <div>
-      {people.map((person: Quote) => (
-        <div>
-          <h1>{person.name}</h1>
-          <h2>{person.age}</h2>
-        </div>
+      {quotes.map((quote: Quote) => (
+        <Quote content={quote.content} submitter={quote.submitter} />
       ))}
-    </div>);
+    </div>
+  );
 }

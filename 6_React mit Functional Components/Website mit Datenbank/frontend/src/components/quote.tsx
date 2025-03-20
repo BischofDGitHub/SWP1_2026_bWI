@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {
+  content: string;
+  submitter?: string;
+};
 
-export default function quote({}: Props) {
+export default function Quote({ content, submitter }: Props) {
   return (
-    <div>quote</div>
-  )
+    <div>
+      {content} - {submitter ?? "Unbekannt"}
+    </div>
+  );
 }
