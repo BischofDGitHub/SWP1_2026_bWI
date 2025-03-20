@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const { log } = require("console");
 require("dotenv").config();
 
 const app = express();
@@ -15,35 +16,42 @@ const PORT = process.env.PORT;
 const HOST = "0.0.0.0";
 
 mongoose
-  .connect(process.env.MONGO_URL_SCHULE, {
+  .connect(process.env.MONGO_URL_ZUHAUSE, {
     authSource: "admin",
   })
   .then(() => console.log("Database connected"))
   .catch((err) => console.error("Database couldn't connect:", err));
 
-app.post("/users", async (req, res) => {
+const QuoteSchema = new mongoose.Schema({
+  content: { type: String, required: true },
+  submitter: { type: String, required: true },
+});
+
+const Quote = mongoose.model("Quote", QuoteSchema);
+
+app.post("/quotes", async (req, res) => {
   try {
-    const newUser = new User(req.body); // Neuen Benutzer aus dem Request-Body erstellen
-    await newUser.save(); // In MongoDB speichern
+    const newQuote = new Quote(req.body); // Neuen Benutzer aus dem Request-Body erstellen
+    await newQuote.save(); // In MongoDB speichern
     res
       .status(201)
-      .json({ message: "Benutzer erfolgreich erstellt!", user: newUser });
+      .json({ message: "Benutzer erfolgreich erstellt!", quote: newQuote });
   } catch (error) {
     res.status(500).json({ message: "Fehler beim Speichern", error });
   }
 });
 
-app.get("/users", async (req, res) => {
+app.get("/quotes", async (req, res) => {
   try {
-    const users = await User.find();
-    res.json(users);
+    const quotes = await Quote.find();
+    res.json(quotes);
   } catch (error) {
     res.status(500).json({ message: "Fehler beim Laden der Benutzer", error });
   }
 });
 
-app.get("/users", async (req, res) => {
-  const users = await User.find();
+app.get("/quotes", async (req, res) => {
+  const quotes = await Quote.find();
   res.json(users);
 });
 
@@ -67,7 +75,8 @@ function getLocalIP() {
   const interfaces = os.networkInterfaces();
   for (const key in interfaces) {
     for (const net of interfaces[key]) {
-      if (net.family === "IPv4" && !net.internal) {
+      const firstTwoOctets = net.address.split(".")[0];
+      if (net.family === "IPv4" && !net.internal && firstTwoOctets == "10") {
         return net.address;
       }
     }

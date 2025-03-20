@@ -4,6 +4,5 @@ react router: https://reactrouter.com/tutorials/address-book, https://reactroute
 vite: https://vite.dev/guide/, https://www.youtube.com/watch?v=O1ZGZ8beEFc
 tailwind (vite): https://tailwindcss.com/docs/guides/vite, https://www.youtube.com/watch?v=judAlUeXdzc
 httpie (postman clone🤡):
-mockapi:
 cursorio (something ai Maybe):
 supabase: https://supabase.com/
