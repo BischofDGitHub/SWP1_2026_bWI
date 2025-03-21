@@ -11,7 +11,7 @@ export default function quotes({}: Props) {
   const [quotes, setQuotes] = useState<Array<Quote>>([]);
 
   useEffect(() => {
-    fetch("http://10.0.0.192:5000/quotes").then((res) => {
+    fetch("http://10.110.48.226:5000/quotes").then((res) => {
       res.json().then((data) => {
         setQuotes(data);
         console.log(data);

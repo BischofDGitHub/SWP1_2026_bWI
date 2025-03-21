@@ -16,7 +16,7 @@ const PORT = process.env.PORT;
 const HOST = "0.0.0.0";
 
 mongoose
-  .connect(process.env.MONGO_URL_ZUHAUSE, {
+  .connect(process.env.MONGO_URL_SCHULE, {
     authSource: "admin",
   })
   .then(() => console.log("Database connected"))
@@ -43,7 +43,7 @@ app.post("/quotes", async (req, res) => {
 
 app.get("/quotes", async (req, res) => {
   try {
-    const quotes = await Quote.find();
+    const quotes = await Quote.find({ content: /.*Es war einmal ein n.*/i });
     res.json(quotes);
   } catch (error) {
     res.status(500).json({ message: "Fehler beim Laden der Benutzer", error });
@@ -51,8 +51,7 @@ app.get("/quotes", async (req, res) => {
 });
 
 app.get("/quotes", async (req, res) => {
-  const quotes = await Quote.find();
-  res.json(users);
+  const quotes = (await Quote.find()) / res.json(users);
 });
 
 app.delete("/people/:id", (req, res) => {
