@@ -132,7 +132,17 @@ Als letzter Schritt muss Tailwind noch in _index.css_ importiert werden.
 @import "tailwindcss";
 ```
 
-# test
+### Zustand
+
+Eine ausführliche Anleitung kann [hier]() gefunden werden. Zustand ist ein nützliches Package, welches es einfacher macht React Komponenten miteinander kommuniezieren zu lassen.
+
+```bash
+npm install zustand
+```
+
+Um Zustand zu nutzen wird empfohlen
+
+# Ende des seriösen Teils
 
 ```python
 print("Hello world!")

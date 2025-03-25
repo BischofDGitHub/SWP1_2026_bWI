@@ -10,7 +10,16 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.json());
-app.use(cors());
+//app.use(cors());
+
+app.options("http://10.110.48.226:3000", cors());
+app.use(
+  cors({
+    origin: "http://10.110.48.226:3000", // "*" Erlaubt alle Ursprünge (zum Testen)
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Erlaubte Methoden
+    allowedHeaders: ["Content-Type", "Authorization"], // Erlaubte Header
+  })
+);
 
 const PORT = process.env.PORT;
 const HOST = "0.0.0.0";
@@ -43,16 +52,12 @@ app.post("/quotes", async (req, res) => {
 
 app.get("/quotes", async (req, res) => {
   try {
-    const Quote = require("./models/quoteShema");
     const quotes = await Quote.find();
     res.json(quotes);
-  } catch (error) {
-    res.status(500).json({ message: "Fehler beim Laden der Benutzer", error });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ message: "Fehler beim Abrufen der Zitate" });
   }
-});
-
-app.get("/quotes", async (req, res) => {
-  const quotes = (await Quote.find()) / res.json(users);
 });
 
 app.delete("/people/:id", (req, res) => {
