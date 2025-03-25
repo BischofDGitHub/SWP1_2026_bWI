@@ -43,7 +43,8 @@ app.post("/quotes", async (req, res) => {
 
 app.get("/quotes", async (req, res) => {
   try {
-    const quotes = await Quote.find({ content: /.*Es war einmal ein n.*/i });
+    const Quote = require("./models/quoteShema");
+    const quotes = await Quote.find();
     res.json(quotes);
   } catch (error) {
     res.status(500).json({ message: "Fehler beim Laden der Benutzer", error });

@@ -1,7 +1,7 @@
 import "./App.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Quotes from "./components/Quotes";
+import Quotes from "./components/pages/Quotes";
 
 function App() {
   const router = createBrowserRouter([
